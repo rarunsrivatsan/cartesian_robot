@@ -1,0 +1,1520 @@
+<?xml version="1.0" encoding="UTF-8"?><Root>
+
+      
+      
+
+
+
+         <mdlref>
+             <mdlrefName>dxpcmds_ref1</mdlrefName>
+             <xpcblkName>Model1</xpcblkName>
+             <refblkName>Model1</refblkName>
+             <Root>
+
+          <SubSystem>
+    <Name>max Error</Name>
+    <xPCName>dxpcmds_ref1/max Error</xPCName>
+    
+    
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Abs</sigName>
+              <xpcsigName>Model1/max Error/Abs</xpcsigName>
+              <sigWidth>600</sigWidth>
+              <sigDim>[600, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>max Error1</Name>
+    <xPCName>dxpcmds_ref1/max Error1</xPCName>
+    
+    
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Abs</sigName>
+              <xpcsigName>Model1/max Error1/Abs</xpcsigName>
+              <sigWidth>3000</sigWidth>
+              <sigDim>[3000, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>max Error2</Name>
+    <xPCName>dxpcmds_ref1/max Error2</xPCName>
+    
+    
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Abs</sigName>
+              <xpcsigName>Model1/max Error2/Abs</xpcsigName>
+              <sigWidth>6000</sigWidth>
+              <sigDim>[6000, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>unity math</Name>
+    <xPCName>dxpcmds_ref1/unity math</xPCName>
+        <SubSystem>
+    <Name>math</Name>
+    <xPCName>dxpcmds_ref1/unity math/math</xPCName>
+    
+    
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>exp</sigName>
+              <xpcsigName>Model1/unity math/math/exp</xpcsigName>
+              <sigWidth>600</sigWidth>
+              <sigDim>[600, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>log</sigName>
+              <xpcsigName>Model1/unity math/math/log</xpcsigName>
+              <sigWidth>600</sigWidth>
+              <sigDim>[600, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>math1</Name>
+    <xPCName>dxpcmds_ref1/unity math/math1</xPCName>
+    
+    
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>exp</sigName>
+              <xpcsigName>Model1/unity math/math1/exp</xpcsigName>
+              <sigWidth>600</sigWidth>
+              <sigDim>[600, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>log</sigName>
+              <xpcsigName>Model1/unity math/math1/log</xpcsigName>
+              <sigWidth>600</sigWidth>
+              <sigDim>[600, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>math2</Name>
+    <xPCName>dxpcmds_ref1/unity math/math2</xPCName>
+    
+    
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>exp</sigName>
+              <xpcsigName>Model1/unity math/math2/exp</xpcsigName>
+              <sigWidth>600</sigWidth>
+              <sigDim>[600, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>log</sigName>
+              <xpcsigName>Model1/unity math/math2/log</xpcsigName>
+              <sigWidth>600</sigWidth>
+              <sigDim>[600, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+
+    
+
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>unity math1</Name>
+    <xPCName>dxpcmds_ref1/unity math1</xPCName>
+        <SubSystem>
+    <Name>math</Name>
+    <xPCName>dxpcmds_ref1/unity math1/math</xPCName>
+    
+    
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>exp</sigName>
+              <xpcsigName>Model1/unity math1/math/exp</xpcsigName>
+              <sigWidth>3000</sigWidth>
+              <sigDim>[3000, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>log</sigName>
+              <xpcsigName>Model1/unity math1/math/log</xpcsigName>
+              <sigWidth>3000</sigWidth>
+              <sigDim>[3000, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>math1</Name>
+    <xPCName>dxpcmds_ref1/unity math1/math1</xPCName>
+    
+    
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>exp</sigName>
+              <xpcsigName>Model1/unity math1/math1/exp</xpcsigName>
+              <sigWidth>3000</sigWidth>
+              <sigDim>[3000, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>log</sigName>
+              <xpcsigName>Model1/unity math1/math1/log</xpcsigName>
+              <sigWidth>3000</sigWidth>
+              <sigDim>[3000, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>math2</Name>
+    <xPCName>dxpcmds_ref1/unity math1/math2</xPCName>
+    
+    
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>exp</sigName>
+              <xpcsigName>Model1/unity math1/math2/exp</xpcsigName>
+              <sigWidth>3000</sigWidth>
+              <sigDim>[3000, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>log</sigName>
+              <xpcsigName>Model1/unity math1/math2/log</xpcsigName>
+              <sigWidth>3000</sigWidth>
+              <sigDim>[3000, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+
+    
+
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>unity math2</Name>
+    <xPCName>dxpcmds_ref1/unity math2</xPCName>
+        <SubSystem>
+    <Name>math</Name>
+    <xPCName>dxpcmds_ref1/unity math2/math</xPCName>
+    
+    
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>exp</sigName>
+              <xpcsigName>Model1/unity math2/math/exp</xpcsigName>
+              <sigWidth>6000</sigWidth>
+              <sigDim>[6000, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>log</sigName>
+              <xpcsigName>Model1/unity math2/math/log</xpcsigName>
+              <sigWidth>6000</sigWidth>
+              <sigDim>[6000, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>math1</Name>
+    <xPCName>dxpcmds_ref1/unity math2/math1</xPCName>
+    
+    
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>exp</sigName>
+              <xpcsigName>Model1/unity math2/math1/exp</xpcsigName>
+              <sigWidth>6000</sigWidth>
+              <sigDim>[6000, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>log</sigName>
+              <xpcsigName>Model1/unity math2/math1/log</xpcsigName>
+              <sigWidth>6000</sigWidth>
+              <sigDim>[6000, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>math2</Name>
+    <xPCName>dxpcmds_ref1/unity math2/math2</xPCName>
+    
+    
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>exp</sigName>
+              <xpcsigName>Model1/unity math2/math2/exp</xpcsigName>
+              <sigWidth>6000</sigWidth>
+              <sigDim>[6000, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>log</sigName>
+              <xpcsigName>Model1/unity math2/math2/log</xpcsigName>
+              <sigWidth>6000</sigWidth>
+              <sigDim>[6000, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+
+    
+
+
+
+    </SubSystem>
+
+      
+
+
+
+
+
+
+ 
+            <block>
+            <blkName>Constant</blkName>
+            <xpcblkName>Model1/Constant</xpcblkName>
+            <SLblockPath>dxpcmds_ref1/Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 600]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Constant2</blkName>
+            <xpcblkName>Model1/Constant2</xpcblkName>
+            <SLblockPath>dxpcmds_ref1/Constant2</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 3000]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Constant3</blkName>
+            <xpcblkName>Model1/Constant3</xpcblkName>
+            <SLblockPath>dxpcmds_ref1/Constant3</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 6000]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Gain2</blkName>
+            <xpcblkName>Model1/Gain2</xpcblkName>
+            <SLblockPath>dxpcmds_ref1/Gain2</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Gain3</blkName>
+            <xpcblkName>Model1/Gain3</xpcblkName>
+            <SLblockPath>dxpcmds_ref1/Gain3</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Gain4</blkName>
+            <xpcblkName>Model1/Gain4</xpcblkName>
+            <SLblockPath>dxpcmds_ref1/Gain4</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Rate Transition</blkName>
+            <xpcblkName>Model1/Rate Transition</xpcblkName>
+            <SLblockPath>dxpcmds_ref1/Rate Transition</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>X0</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Gain2</sigName>
+              <xpcsigName>Model1/Gain2</xpcsigName>
+              <sigWidth>600</sigWidth>
+              <sigDim>[600, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Gain3</sigName>
+              <xpcsigName>Model1/Gain3</xpcsigName>
+              <sigWidth>3000</sigWidth>
+              <sigDim>[3000, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Gain4</sigName>
+              <xpcsigName>Model1/Gain4</xpcsigName>
+              <sigWidth>6000</sigWidth>
+              <sigDim>[6000, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Sum</sigName>
+              <xpcsigName>Model1/Sum</xpcsigName>
+              <sigWidth>600</sigWidth>
+              <sigDim>[600, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Sum1</sigName>
+              <xpcsigName>Model1/Sum1</xpcsigName>
+              <sigWidth>3000</sigWidth>
+              <sigDim>[3000, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Sum2</sigName>
+              <xpcsigName>Model1/Sum2</xpcsigName>
+              <sigWidth>6000</sigWidth>
+              <sigDim>[6000, 1]</sigDim>
+            </signal>
+
+</Root>
+         </mdlref>
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Model1/p1</sigName>
+              <xpcsigName>Model1/p1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Model1/p2</sigName>
+              <xpcsigName>Model1/p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Model1/p3</sigName>
+              <xpcsigName>Model1/p3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Model1/p4</sigName>
+              <xpcsigName>Model1/p4</xpcsigName>
+              <sigWidth>6000</sigWidth>
+              <sigDim>[6000, 1]</sigDim>
+            </signal>
+
+
+         <mdlref>
+             <mdlrefName>dxpcmds_ref2</mdlrefName>
+             <xpcblkName>Model2</xpcblkName>
+             <refblkName>Model2</refblkName>
+             <Root>
+
+          <SubSystem>
+    <Name>max Error</Name>
+    <xPCName>dxpcmds_ref2/max Error</xPCName>
+    
+    
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Abs</sigName>
+              <xpcsigName>Model2/max Error/Abs</xpcsigName>
+              <sigWidth>700</sigWidth>
+              <sigDim>[700, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>max Error1</Name>
+    <xPCName>dxpcmds_ref2/max Error1</xPCName>
+    
+    
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Abs</sigName>
+              <xpcsigName>Model2/max Error1/Abs</xpcsigName>
+              <sigWidth>6000</sigWidth>
+              <sigDim>[6000, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>max Error2</Name>
+    <xPCName>dxpcmds_ref2/max Error2</xPCName>
+    
+    
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Abs</sigName>
+              <xpcsigName>Model2/max Error2/Abs</xpcsigName>
+              <sigWidth>8000</sigWidth>
+              <sigDim>[8000, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>unity math</Name>
+    <xPCName>dxpcmds_ref2/unity math</xPCName>
+        <SubSystem>
+    <Name>math</Name>
+    <xPCName>dxpcmds_ref2/unity math/math</xPCName>
+    
+    
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>exp</sigName>
+              <xpcsigName>Model2/unity math/math/exp</xpcsigName>
+              <sigWidth>700</sigWidth>
+              <sigDim>[700, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>log</sigName>
+              <xpcsigName>Model2/unity math/math/log</xpcsigName>
+              <sigWidth>700</sigWidth>
+              <sigDim>[700, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>math1</Name>
+    <xPCName>dxpcmds_ref2/unity math/math1</xPCName>
+    
+    
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>exp</sigName>
+              <xpcsigName>Model2/unity math/math1/exp</xpcsigName>
+              <sigWidth>700</sigWidth>
+              <sigDim>[700, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>log</sigName>
+              <xpcsigName>Model2/unity math/math1/log</xpcsigName>
+              <sigWidth>700</sigWidth>
+              <sigDim>[700, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>math2</Name>
+    <xPCName>dxpcmds_ref2/unity math/math2</xPCName>
+    
+    
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>exp</sigName>
+              <xpcsigName>Model2/unity math/math2/exp</xpcsigName>
+              <sigWidth>700</sigWidth>
+              <sigDim>[700, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>log</sigName>
+              <xpcsigName>Model2/unity math/math2/log</xpcsigName>
+              <sigWidth>700</sigWidth>
+              <sigDim>[700, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+
+    
+
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>unity math1</Name>
+    <xPCName>dxpcmds_ref2/unity math1</xPCName>
+        <SubSystem>
+    <Name>math</Name>
+    <xPCName>dxpcmds_ref2/unity math1/math</xPCName>
+    
+    
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>exp</sigName>
+              <xpcsigName>Model2/unity math1/math/exp</xpcsigName>
+              <sigWidth>6000</sigWidth>
+              <sigDim>[6000, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>log</sigName>
+              <xpcsigName>Model2/unity math1/math/log</xpcsigName>
+              <sigWidth>6000</sigWidth>
+              <sigDim>[6000, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>math1</Name>
+    <xPCName>dxpcmds_ref2/unity math1/math1</xPCName>
+    
+    
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>exp</sigName>
+              <xpcsigName>Model2/unity math1/math1/exp</xpcsigName>
+              <sigWidth>6000</sigWidth>
+              <sigDim>[6000, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>log</sigName>
+              <xpcsigName>Model2/unity math1/math1/log</xpcsigName>
+              <sigWidth>6000</sigWidth>
+              <sigDim>[6000, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>math2</Name>
+    <xPCName>dxpcmds_ref2/unity math1/math2</xPCName>
+    
+    
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>exp</sigName>
+              <xpcsigName>Model2/unity math1/math2/exp</xpcsigName>
+              <sigWidth>6000</sigWidth>
+              <sigDim>[6000, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>log</sigName>
+              <xpcsigName>Model2/unity math1/math2/log</xpcsigName>
+              <sigWidth>6000</sigWidth>
+              <sigDim>[6000, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+
+    
+
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>unity math2</Name>
+    <xPCName>dxpcmds_ref2/unity math2</xPCName>
+        <SubSystem>
+    <Name>math</Name>
+    <xPCName>dxpcmds_ref2/unity math2/math</xPCName>
+    
+    
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>exp</sigName>
+              <xpcsigName>Model2/unity math2/math/exp</xpcsigName>
+              <sigWidth>8000</sigWidth>
+              <sigDim>[8000, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>log</sigName>
+              <xpcsigName>Model2/unity math2/math/log</xpcsigName>
+              <sigWidth>8000</sigWidth>
+              <sigDim>[8000, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>math1</Name>
+    <xPCName>dxpcmds_ref2/unity math2/math1</xPCName>
+    
+    
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>exp</sigName>
+              <xpcsigName>Model2/unity math2/math1/exp</xpcsigName>
+              <sigWidth>8000</sigWidth>
+              <sigDim>[8000, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>log</sigName>
+              <xpcsigName>Model2/unity math2/math1/log</xpcsigName>
+              <sigWidth>8000</sigWidth>
+              <sigDim>[8000, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>math2</Name>
+    <xPCName>dxpcmds_ref2/unity math2/math2</xPCName>
+    
+    
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>exp</sigName>
+              <xpcsigName>Model2/unity math2/math2/exp</xpcsigName>
+              <sigWidth>8000</sigWidth>
+              <sigDim>[8000, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>log</sigName>
+              <xpcsigName>Model2/unity math2/math2/log</xpcsigName>
+              <sigWidth>8000</sigWidth>
+              <sigDim>[8000, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+
+    
+
+
+
+    </SubSystem>
+
+      
+
+
+
+
+
+
+
+ 
+            <block>
+            <blkName>Constant</blkName>
+            <xpcblkName>Model2/Constant</xpcblkName>
+            <SLblockPath>dxpcmds_ref2/Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 700]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Constant2</blkName>
+            <xpcblkName>Model2/Constant2</xpcblkName>
+            <SLblockPath>dxpcmds_ref2/Constant2</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 8000]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Gain1</blkName>
+            <xpcblkName>Model2/Gain1</xpcblkName>
+            <SLblockPath>dxpcmds_ref2/Gain1</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Gain2</blkName>
+            <xpcblkName>Model2/Gain2</xpcblkName>
+            <SLblockPath>dxpcmds_ref2/Gain2</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Gain3</blkName>
+            <xpcblkName>Model2/Gain3</xpcblkName>
+            <SLblockPath>dxpcmds_ref2/Gain3</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Gain1</sigName>
+              <xpcsigName>Model2/Gain1</xpcsigName>
+              <sigWidth>6000</sigWidth>
+              <sigDim>[6000, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Gain2</sigName>
+              <xpcsigName>Model2/Gain2</xpcsigName>
+              <sigWidth>700</sigWidth>
+              <sigDim>[700, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Gain3</sigName>
+              <xpcsigName>Model2/Gain3</xpcsigName>
+              <sigWidth>8000</sigWidth>
+              <sigDim>[8000, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Sum</sigName>
+              <xpcsigName>Model2/Sum</xpcsigName>
+              <sigWidth>700</sigWidth>
+              <sigDim>[700, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Sum1</sigName>
+              <xpcsigName>Model2/Sum1</xpcsigName>
+              <sigWidth>6000</sigWidth>
+              <sigDim>[6000, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Sum2</sigName>
+              <xpcsigName>Model2/Sum2</xpcsigName>
+              <sigWidth>8000</sigWidth>
+              <sigDim>[8000, 1]</sigDim>
+            </signal>
+
+</Root>
+         </mdlref>
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Model2/p1</sigName>
+              <xpcsigName>Model2/p1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Model2/p2</sigName>
+              <xpcsigName>Model2/p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Model2/p3</sigName>
+              <xpcsigName>Model2/p3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+</Root>

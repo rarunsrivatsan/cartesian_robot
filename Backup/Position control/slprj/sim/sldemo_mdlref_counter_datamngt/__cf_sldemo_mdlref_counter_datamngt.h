@@ -1,0 +1,3 @@
+#ifndef CF_sldemo_mdlref_counter_datamngt_H__
+#define CF_sldemo_mdlref_counter_datamngt_H__
+#endif

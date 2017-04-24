@@ -1,0 +1,4153 @@
+<?xml version="1.0" encoding="UTF-8"?><Root>
+
+          <SubSystem>
+    <Name>Force Sensor</Name>
+    <xPCName>slrt_parker/Force Sensor</xPCName>
+    
+    
+
+ 
+            <block>
+            <blkName>Receive 1</blkName>
+            <xpcblkName>Force Sensor/Receive 1</xpcblkName>
+            <SLblockPath>slrt_parker/Force Sensor/Receive 1</SLblockPath>
+            <isSrc>[1 0 2]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 11]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Byte Unpacking 1</sigName>
+              <xpcsigName>Force Sensor/Byte Unpacking 1</xpcsigName>
+              <sigWidth>6</sigWidth>
+              <sigDim>[6, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Receive 1/p1</sigName>
+              <xpcsigName>Force Sensor/Receive 1/p1</xpcsigName>
+              <sigWidth>48</sigWidth>
+              <sigDim>[48, 1]</sigDim>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Receive 1/p2</sigName>
+              <xpcsigName>Force Sensor/Receive 1/p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Motor Enable Subsystem</Name>
+    <xPCName>slrt_parker/Motor Enable Subsystem</xPCName>
+    
+    
+ 
+            <block>
+            <blkName>Enable Motors</blkName>
+            <xpcblkName>Motor Enable Subsystem/Enable Motors</xpcblkName>
+            <SLblockPath>slrt_parker/Motor Enable Subsystem/Enable Motors</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[3, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>PCI-DDA08 12 
+to PORTA</blkName>
+            <xpcblkName>Motor Enable Subsystem/PCI-DDA08 12  to PORTA</xpcblkName>
+            <SLblockPath>slrt_parker/Motor Enable Subsystem/PCI-DDA08 12  to PORTA</SLblockPath>
+            <isSrc>[0 3 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 3]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 3]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 3]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 3]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P8</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P9</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P10</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Enable Motors</sigName>
+              <xpcsigName>Motor Enable Subsystem/Enable Motors</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>PD Inverse Dynamics</Name>
+    <xPCName>slrt_parker/PD Inverse Dynamics</xPCName>
+    
+    
+
+ 
+            <block>
+            <blkName>Dead Zone1</blkName>
+            <xpcblkName>PD Inverse Dynamics/Dead Zone1</xpcblkName>
+            <SLblockPath>slrt_parker/PD Inverse Dynamics/Dead Zone1</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>LowerValue</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>UpperValue</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Amp Gain</blkName>
+            <xpcblkName>PD Inverse Dynamics/Amp Gain</xpcblkName>
+            <SLblockPath>slrt_parker/PD Inverse Dynamics/Amp Gain</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 3]</dim>  
+          </parameter>
+          </block>
+
+
+
+
+
+
+ 
+            <block>
+            <blkName>m//s^2</blkName>
+            <xpcblkName>PD Inverse Dynamics/m//s^2</xpcblkName>
+            <SLblockPath>slrt_parker/PD Inverse Dynamics/m//s^2</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+ 
+            <block>
+            <blkName>Saturation [-10, 10]</blkName>
+            <xpcblkName>PD Inverse Dynamics/Saturation [-10, 10]</xpcblkName>
+            <SLblockPath>slrt_parker/PD Inverse Dynamics/Saturation [-10, 10]</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>UpperLimit</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>LowerLimit</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Dead Zone1</sigName>
+              <xpcsigName>PD Inverse Dynamics/Dead Zone1</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Amp Gain</sigName>
+              <xpcsigName>PD Inverse Dynamics/Amp Gain</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Inertia Matrix
+[Kg m^2]</sigName>
+              <xpcsigName>PD Inverse Dynamics/Inertia Matrix [Kg m^2]</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+                <sigLabel>tau_motion</sigLabel>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Kd [volts*second//rad]</sigName>
+              <xpcsigName>PD Inverse Dynamics/Kd [volts*second//rad]</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Kp</sigName>
+              <xpcsigName>PD Inverse Dynamics/Kp</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Torque Constant</sigName>
+              <xpcsigName>PD Inverse Dynamics/Torque Constant</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Viscous Friction</sigName>
+              <xpcsigName>PD Inverse Dynamics/Viscous Friction</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>m//s^2</sigName>
+              <xpcsigName>PD Inverse Dynamics/m//s^2</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>pitch1</sigName>
+              <xpcsigName>PD Inverse Dynamics/pitch1</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Saturation [-10, 10]</sigName>
+              <xpcsigName>PD Inverse Dynamics/Saturation [-10, 10]</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Add</sigName>
+              <xpcsigName>PD Inverse Dynamics/Add</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Add1</sigName>
+              <xpcsigName>PD Inverse Dynamics/Add1</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+                <sigLabel>tau</sigLabel>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Sum</sigName>
+              <xpcsigName>PD Inverse Dynamics/Sum</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Sum1</sigName>
+              <xpcsigName>PD Inverse Dynamics/Sum1</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Parker 404XR</Name>
+    <xPCName>slrt_parker/Parker 404XR</xPCName>
+        <SubSystem>
+    <Name>Count to Position</Name>
+    <xPCName>slrt_parker/Parker 404XR/Count to Position</xPCName>
+        <SubSystem>
+    <Name>Accel Filter</Name>
+    <xPCName>slrt_parker/Parker 404XR/Count to Position/Accel Filter</xPCName>
+        <SubSystem>
+    <Name>Discrete Derivative1</Name>
+    <xPCName>slrt_parker/Parker 404XR/Count to Position/Accel Filter/Discrete Derivative1</xPCName>
+    
+    
+
+
+ 
+            <block>
+            <blkName>TSamp</blkName>
+            <xpcblkName>Parker 404XR/Count to Position/Accel Filter/Discrete Derivative1/TSamp</xpcblkName>
+            <SLblockPath>slrt_parker/Parker 404XR/Count to Position/Accel Filter/Discrete Derivative1/TSamp</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>WtEt</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>UD</blkName>
+            <xpcblkName>Parker 404XR/Count to Position/Accel Filter/Discrete Derivative1/UD</xpcblkName>
+            <SLblockPath>slrt_parker/Parker 404XR/Count to Position/Accel Filter/Discrete Derivative1/UD</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>ICPrevScaledInput</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Diff</sigName>
+              <xpcsigName>Parker 404XR/Count to Position/Accel Filter/Discrete Derivative1/Diff</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>TSamp</sigName>
+              <xpcsigName>Parker 404XR/Count to Position/Accel Filter/Discrete Derivative1/TSamp</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>UD</sigName>
+              <xpcsigName>Parker 404XR/Count to Position/Accel Filter/Discrete Derivative1/UD</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+                
+            </signal>
+
+    </SubSystem>
+
+    
+ 
+            <block>
+            <blkName>Discrete Derivative1</blkName>
+            <xpcblkName>Parker 404XR/Count to Position/Accel Filter/Discrete Derivative1</xpcblkName>
+            <SLblockPath>slrt_parker/Parker 404XR/Count to Position/Accel Filter/Discrete Derivative1</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>ICPrevScaledInput</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+ 
+            <block>
+            <blkName>Discrete FIR Filter</blkName>
+            <xpcblkName>Parker 404XR/Count to Position/Accel Filter/Discrete FIR Filter</xpcblkName>
+            <SLblockPath>slrt_parker/Parker 404XR/Count to Position/Accel Filter/Discrete FIR Filter</SLblockPath>
+            <isSrc>[0 2 1]</isSrc>
+          <parameter>
+          <paramName>InitialStates</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Gain</sigName>
+              <xpcsigName>Parker 404XR/Count to Position/Accel Filter/Gain</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Discrete FIR Filter</sigName>
+              <xpcsigName>Parker 404XR/Count to Position/Accel Filter/Discrete FIR Filter</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Position Filter observer</Name>
+    <xPCName>slrt_parker/Parker 404XR/Count to Position/Position Filter observer</xPCName>
+    
+    
+
+
+ 
+            <block>
+            <blkName>Discrete FIR Filter</blkName>
+            <xpcblkName>Parker 404XR/Count to Position/Position Filter observer/Discrete FIR Filter</xpcblkName>
+            <SLblockPath>slrt_parker/Parker 404XR/Count to Position/Position Filter observer/Discrete FIR Filter</SLblockPath>
+            <isSrc>[0 2 1]</isSrc>
+          <parameter>
+          <paramName>InitialStates</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Gain</sigName>
+              <xpcsigName>Parker 404XR/Count to Position/Position Filter observer/Gain</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Discrete FIR Filter</sigName>
+              <xpcsigName>Parker 404XR/Count to Position/Position Filter observer/Discrete FIR Filter</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Position Filter observer1</Name>
+    <xPCName>slrt_parker/Parker 404XR/Count to Position/Position Filter observer1</xPCName>
+    
+    
+
+
+ 
+            <block>
+            <blkName>Discrete FIR Filter</blkName>
+            <xpcblkName>Parker 404XR/Count to Position/Position Filter observer1/Discrete FIR Filter</xpcblkName>
+            <SLblockPath>slrt_parker/Parker 404XR/Count to Position/Position Filter observer1/Discrete FIR Filter</SLblockPath>
+            <isSrc>[0 2 1]</isSrc>
+          <parameter>
+          <paramName>InitialStates</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Gain</sigName>
+              <xpcsigName>Parker 404XR/Count to Position/Position Filter observer1/Gain</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Discrete FIR Filter</sigName>
+              <xpcsigName>Parker 404XR/Count to Position/Position Filter observer1/Discrete FIR Filter</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Sample and
+Hold</Name>
+    <xPCName>slrt_parker/Parker 404XR/Count to Position/Sample and Hold</xPCName>
+        <SubSystem>
+    <Name>Model</Name>
+    <xPCName>slrt_parker/Parker 404XR/Count to Position/Sample and Hold/Model</xPCName>
+    
+    
+
+
+ 
+            <block>
+            <blkName>IC=ic</blkName>
+            <xpcblkName>Parker 404XR/Count to Position/Sample and Hold/Model/IC=ic</xpcblkName>
+            <SLblockPath>slrt_parker/Parker 404XR/Count to Position/Sample and Hold/Model/IC=ic</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>ic</paramName>
+          <dim>[3, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Data Type Conversion</sigName>
+              <xpcsigName>Parker 404XR/Count to Position/Sample and Hold/Model/Data Type Conversion</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Switch</sigName>
+              <xpcsigName>Parker 404XR/Count to Position/Sample and Hold/Model/Switch</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>IC=ic</sigName>
+              <xpcsigName>Parker 404XR/Count to Position/Sample and Hold/Model/IC=ic</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+
+    
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Velocity Filter</Name>
+    <xPCName>slrt_parker/Parker 404XR/Count to Position/Velocity Filter</xPCName>
+        <SubSystem>
+    <Name>Discrete Derivative</Name>
+    <xPCName>slrt_parker/Parker 404XR/Count to Position/Velocity Filter/Discrete Derivative</xPCName>
+    
+    
+
+
+ 
+            <block>
+            <blkName>TSamp</blkName>
+            <xpcblkName>Parker 404XR/Count to Position/Velocity Filter/Discrete Derivative/TSamp</xpcblkName>
+            <SLblockPath>slrt_parker/Parker 404XR/Count to Position/Velocity Filter/Discrete Derivative/TSamp</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>WtEt</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>UD</blkName>
+            <xpcblkName>Parker 404XR/Count to Position/Velocity Filter/Discrete Derivative/UD</xpcblkName>
+            <SLblockPath>slrt_parker/Parker 404XR/Count to Position/Velocity Filter/Discrete Derivative/UD</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>ICPrevScaledInput</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Diff</sigName>
+              <xpcsigName>Parker 404XR/Count to Position/Velocity Filter/Discrete Derivative/Diff</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>TSamp</sigName>
+              <xpcsigName>Parker 404XR/Count to Position/Velocity Filter/Discrete Derivative/TSamp</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>UD</sigName>
+              <xpcsigName>Parker 404XR/Count to Position/Velocity Filter/Discrete Derivative/UD</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+                
+            </signal>
+
+    </SubSystem>
+
+    
+ 
+            <block>
+            <blkName>Discrete Derivative</blkName>
+            <xpcblkName>Parker 404XR/Count to Position/Velocity Filter/Discrete Derivative</xpcblkName>
+            <SLblockPath>slrt_parker/Parker 404XR/Count to Position/Velocity Filter/Discrete Derivative</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>ICPrevScaledInput</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+ 
+            <block>
+            <blkName>Discrete FIR Filter</blkName>
+            <xpcblkName>Parker 404XR/Count to Position/Velocity Filter/Discrete FIR Filter</xpcblkName>
+            <SLblockPath>slrt_parker/Parker 404XR/Count to Position/Velocity Filter/Discrete FIR Filter</SLblockPath>
+            <isSrc>[0 2 1]</isSrc>
+          <parameter>
+          <paramName>InitialStates</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Gain</sigName>
+              <xpcsigName>Parker 404XR/Count to Position/Velocity Filter/Gain</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Discrete FIR Filter</sigName>
+              <xpcsigName>Parker 404XR/Count to Position/Velocity Filter/Discrete FIR Filter</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Velocity Filter observer</Name>
+    <xPCName>slrt_parker/Parker 404XR/Count to Position/Velocity Filter observer</xPCName>
+        <SubSystem>
+    <Name>Discrete Derivative</Name>
+    <xPCName>slrt_parker/Parker 404XR/Count to Position/Velocity Filter observer/Discrete Derivative</xPCName>
+    
+    
+
+
+ 
+            <block>
+            <blkName>TSamp</blkName>
+            <xpcblkName>Parker 404XR/Count to Position/Velocity Filter observer/Discrete Derivative/TSamp</xpcblkName>
+            <SLblockPath>slrt_parker/Parker 404XR/Count to Position/Velocity Filter observer/Discrete Derivative/TSamp</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>WtEt</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>UD</blkName>
+            <xpcblkName>Parker 404XR/Count to Position/Velocity Filter observer/Discrete Derivative/UD</xpcblkName>
+            <SLblockPath>slrt_parker/Parker 404XR/Count to Position/Velocity Filter observer/Discrete Derivative/UD</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>ICPrevScaledInput</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Diff</sigName>
+              <xpcsigName>Parker 404XR/Count to Position/Velocity Filter observer/Discrete Derivative/Diff</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>TSamp</sigName>
+              <xpcsigName>Parker 404XR/Count to Position/Velocity Filter observer/Discrete Derivative/TSamp</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>UD</sigName>
+              <xpcsigName>Parker 404XR/Count to Position/Velocity Filter observer/Discrete Derivative/UD</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+                
+            </signal>
+
+    </SubSystem>
+
+    
+ 
+            <block>
+            <blkName>Discrete Derivative</blkName>
+            <xpcblkName>Parker 404XR/Count to Position/Velocity Filter observer/Discrete Derivative</xpcblkName>
+            <SLblockPath>slrt_parker/Parker 404XR/Count to Position/Velocity Filter observer/Discrete Derivative</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>ICPrevScaledInput</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+ 
+            <block>
+            <blkName>Discrete FIR Filter</blkName>
+            <xpcblkName>Parker 404XR/Count to Position/Velocity Filter observer/Discrete FIR Filter</xpcblkName>
+            <SLblockPath>slrt_parker/Parker 404XR/Count to Position/Velocity Filter observer/Discrete FIR Filter</SLblockPath>
+            <isSrc>[0 2 1]</isSrc>
+          <parameter>
+          <paramName>InitialStates</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Gain</sigName>
+              <xpcsigName>Parker 404XR/Count to Position/Velocity Filter observer/Gain</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Discrete FIR Filter</sigName>
+              <xpcsigName>Parker 404XR/Count to Position/Velocity Filter observer/Discrete FIR Filter</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+
+    
+
+
+
+ 
+            <block>
+            <blkName>Sample and
+Hold</blkName>
+            <xpcblkName>Parker 404XR/Count to Position/Sample and Hold</xpcblkName>
+            <SLblockPath>slrt_parker/Parker 404XR/Count to Position/Sample and Hold</SLblockPath>
+            <isSrc>[0 2 1]</isSrc>
+          <parameter>
+          <paramName>ic</paramName>
+          <dim>[3, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+
+
+
+
+
+
+
+
+ 
+            <block>
+            <blkName>Unit Delay</blkName>
+            <xpcblkName>Parker 404XR/Count to Position/Unit Delay</xpcblkName>
+            <SLblockPath>slrt_parker/Parker 404XR/Count to Position/Unit Delay</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Gain_Rads</sigName>
+              <xpcsigName>Parker 404XR/Count to Position/Gain_Rads</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Rads_mm</sigName>
+              <xpcsigName>Parker 404XR/Count to Position/Rads_mm</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Rate Transition</sigName>
+              <xpcsigName>Parker 404XR/Count to Position/Rate Transition</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Rate Transition1</sigName>
+              <xpcsigName>Parker 404XR/Count to Position/Rate Transition1</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Rate Transition2</sigName>
+              <xpcsigName>Parker 404XR/Count to Position/Rate Transition2</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Add</sigName>
+              <xpcsigName>Parker 404XR/Count to Position/Add</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Subtract</sigName>
+              <xpcsigName>Parker 404XR/Count to Position/Subtract</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Unit Delay</sigName>
+              <xpcsigName>Parker 404XR/Count to Position/Unit Delay</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Plant</Name>
+    <xPCName>slrt_parker/Parker 404XR/Plant</xPCName>
+    
+    
+ 
+            <block>
+            <blkName>Gain</blkName>
+            <xpcblkName>Parker 404XR/Plant/Gain</xpcblkName>
+            <SLblockPath>slrt_parker/Parker 404XR/Plant/Gain</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+ 
+            <block>
+            <blkName>1STPORTB </blkName>
+            <xpcblkName>Parker 404XR/Plant/1STPORTB </xpcblkName>
+            <SLblockPath>slrt_parker/Parker 404XR/Plant/1STPORTB </SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 3]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P8</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>1STPORTB 1</blkName>
+            <xpcblkName>Parker 404XR/Plant/1STPORTB 1</xpcblkName>
+            <SLblockPath>slrt_parker/Parker 404XR/Plant/1STPORTB 1</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 3]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P8</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>1STPORTB 2</blkName>
+            <xpcblkName>Parker 404XR/Plant/1STPORTB 2</xpcblkName>
+            <SLblockPath>slrt_parker/Parker 404XR/Plant/1STPORTB 2</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 3]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P8</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>CNT32-8M(PCI) Ch1</blkName>
+            <xpcblkName>Parker 404XR/Plant/CNT32-8M(PCI) Ch1</xpcblkName>
+            <SLblockPath>slrt_parker/Parker 404XR/Plant/CNT32-8M(PCI) Ch1</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P8</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P9</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P10</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P11</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P12</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P13</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P14</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P15</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P16</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P17</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P18</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P19</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P20</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P21</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P22</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P23</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P24</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P25</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P26</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P27</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P28</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P29</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P30</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P31</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P32</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P33</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P34</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P35</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>CNT32-8M(PCI) Ch2</blkName>
+            <xpcblkName>Parker 404XR/Plant/CNT32-8M(PCI) Ch2</xpcblkName>
+            <SLblockPath>slrt_parker/Parker 404XR/Plant/CNT32-8M(PCI) Ch2</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P8</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P9</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P10</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P11</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P12</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P13</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P14</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P15</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P16</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P17</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P18</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P19</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P20</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P21</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P22</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P23</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P24</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P25</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P26</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P27</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P28</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P29</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P30</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P31</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P32</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P33</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P34</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P35</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>CNT32-8M(PCI) Ch3</blkName>
+            <xpcblkName>Parker 404XR/Plant/CNT32-8M(PCI) Ch3</xpcblkName>
+            <SLblockPath>slrt_parker/Parker 404XR/Plant/CNT32-8M(PCI) Ch3</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P8</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P9</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P10</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P11</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P12</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P13</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P14</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P15</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P16</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P17</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P18</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P19</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P20</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P21</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P22</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P23</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P24</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P25</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P26</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P27</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P28</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P29</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P30</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P31</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P32</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P33</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P34</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P35</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>PCI-DDA08 12 </blkName>
+            <xpcblkName>Parker 404XR/Plant/PCI-DDA08 12 </xpcblkName>
+            <SLblockPath>slrt_parker/Parker 404XR/Plant/PCI-DDA08 12 </SLblockPath>
+            <isSrc>[0 3 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 3]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 3]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 3]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 3]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Gain</sigName>
+              <xpcsigName>Parker 404XR/Plant/Gain</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Logical
+Operator</sigName>
+              <xpcsigName>Parker 404XR/Plant/Logical Operator</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>1STPORTB </sigName>
+              <xpcsigName>Parker 404XR/Plant/1STPORTB </xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>1STPORTB 1</sigName>
+              <xpcsigName>Parker 404XR/Plant/1STPORTB 1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>1STPORTB 2</sigName>
+              <xpcsigName>Parker 404XR/Plant/1STPORTB 2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>CNT32-8M(PCI) Ch1</sigName>
+              <xpcsigName>Parker 404XR/Plant/CNT32-8M(PCI) Ch1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>CNT32-8M(PCI) Ch2</sigName>
+              <xpcsigName>Parker 404XR/Plant/CNT32-8M(PCI) Ch2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>CNT32-8M(PCI) Ch3</sigName>
+              <xpcsigName>Parker 404XR/Plant/CNT32-8M(PCI) Ch3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+    </SubSystem>
+
+    
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Scopes</Name>
+    <xPCName>slrt_parker/Scopes</xPCName>
+        <SubSystem>
+    <Name>Control Action</Name>
+    <xPCName>slrt_parker/Scopes/Control Action</xPCName>
+    
+    
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Current Position</Name>
+    <xPCName>slrt_parker/Scopes/Current Position</xPCName>
+    
+    
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>EN Record</Name>
+    <xPCName>slrt_parker/Scopes/EN Record</xPCName>
+    
+    
+ 
+            <block>
+            <blkName>Constant</blkName>
+            <xpcblkName>Scopes/EN Record/Constant</xpcblkName>
+            <SLblockPath>slrt_parker/Scopes/EN Record/Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>const</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Compare</sigName>
+              <xpcsigName>Scopes/EN Record/Compare</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Enabled
+Subsystem</Name>
+    <xPCName>slrt_parker/Scopes/Enabled Subsystem</xPCName>
+        <SubSystem>
+    <Name>ft_Scope </Name>
+    <xPCName>slrt_parker/Scopes/Enabled Subsystem/ft_Scope </xPCName>
+    
+    
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>pc_Scope </Name>
+    <xPCName>slrt_parker/Scopes/Enabled Subsystem/pc_Scope </xPCName>
+    
+    
+
+
+    
+    
+
+
+    </SubSystem>
+
+    
+
+
+ 
+            <block>
+            <blkName>Gain</blkName>
+            <xpcblkName>Scopes/Enabled Subsystem/Gain</xpcblkName>
+            <SLblockPath>slrt_parker/Scopes/Enabled Subsystem/Gain</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Gain1</blkName>
+            <xpcblkName>Scopes/Enabled Subsystem/Gain1</xpcblkName>
+            <SLblockPath>slrt_parker/Scopes/Enabled Subsystem/Gain1</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Gain</sigName>
+              <xpcsigName>Scopes/Enabled Subsystem/Gain</xpcsigName>
+              <sigWidth>9</sigWidth>
+              <sigDim>[9, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Gain1</sigName>
+              <xpcsigName>Scopes/Enabled Subsystem/Gain1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>File Scope</Name>
+    <xPCName>slrt_parker/Scopes/File Scope</xPCName>
+        <SubSystem>
+    <Name>P_cur_Scope</Name>
+    <xPCName>slrt_parker/Scopes/File Scope/P_cur_Scope</xPCName>
+    
+    
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>P_des_Scope</Name>
+    <xPCName>slrt_parker/Scopes/File Scope/P_des_Scope</xPCName>
+    
+    
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>wrenchScope</Name>
+    <xPCName>slrt_parker/Scopes/File Scope/wrenchScope</xPCName>
+    
+    
+
+
+    
+    
+
+
+    </SubSystem>
+
+    
+
+
+
+ 
+            <block>
+            <blkName>Gain</blkName>
+            <xpcblkName>Scopes/File Scope/Gain</xpcblkName>
+            <SLblockPath>slrt_parker/Scopes/File Scope/Gain</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Gain1</blkName>
+            <xpcblkName>Scopes/File Scope/Gain1</xpcblkName>
+            <SLblockPath>slrt_parker/Scopes/File Scope/Gain1</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Gain2</blkName>
+            <xpcblkName>Scopes/File Scope/Gain2</xpcblkName>
+            <SLblockPath>slrt_parker/Scopes/File Scope/Gain2</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Gain</sigName>
+              <xpcsigName>Scopes/File Scope/Gain</xpcsigName>
+              <sigWidth>7</sigWidth>
+              <sigDim>[7, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Gain1</sigName>
+              <xpcsigName>Scopes/File Scope/Gain1</xpcsigName>
+              <sigWidth>10</sigWidth>
+              <sigDim>[10, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Gain2</sigName>
+              <xpcsigName>Scopes/File Scope/Gain2</xpcsigName>
+              <sigWidth>10</sigWidth>
+              <sigDim>[10, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Force_in_Robot_Base</Name>
+    <xPCName>slrt_parker/Scopes/Force_in_Robot_Base</xPCName>
+    
+    
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>System Status Scope</Name>
+    <xPCName>slrt_parker/Scopes/System Status Scope</xPCName>
+    
+    
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Trajectory</Name>
+    <xPCName>slrt_parker/Scopes/Trajectory</xPCName>
+    
+    
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>ft_host</Name>
+    <xPCName>slrt_parker/Scopes/ft_host</xPCName>
+    
+    
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>limitsw_host</Name>
+    <xPCName>slrt_parker/Scopes/limitsw_host</xPCName>
+    
+    
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>tau_host </Name>
+    <xPCName>slrt_parker/Scopes/tau_host </xPCName>
+    
+    
+
+
+    
+    
+
+
+    </SubSystem>
+
+    
+
+
+ 
+            <block>
+            <blkName>EN Record</blkName>
+            <xpcblkName>Scopes/EN Record</xpcblkName>
+            <SLblockPath>slrt_parker/Scopes/EN Record</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>const</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+
+
+
+
+
+
+ 
+            <block>
+            <blkName>DynAna_File_scope</blkName>
+            <xpcblkName>Scopes/DynAna_File_scope</xpcblkName>
+            <SLblockPath>slrt_parker/Scopes/DynAna_File_scope</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>FT_File_scope</blkName>
+            <xpcblkName>Scopes/FT_File_scope</xpcblkName>
+            <SLblockPath>slrt_parker/Scopes/FT_File_scope</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>sys_stat</blkName>
+            <xpcblkName>Scopes/sys_stat</xpcblkName>
+            <SLblockPath>slrt_parker/Scopes/sys_stat</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+    
+
+
+    
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>sys_stat</sigName>
+              <xpcsigName>Scopes/sys_stat</xpcsigName>
+              <sigWidth>6</sigWidth>
+              <sigDim>[6, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Product</sigName>
+              <xpcsigName>Scopes/Product</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Trajectory Planner</Name>
+    <xPCName>slrt_parker/Trajectory Planner</xPCName>
+        <SubSystem>
+    <Name>Enable Homing</Name>
+    <xPCName>slrt_parker/Trajectory Planner/Enable Homing</xPCName>
+    
+    
+ 
+            <block>
+            <blkName>Constant</blkName>
+            <xpcblkName>Trajectory Planner/Enable Homing/Constant</xpcblkName>
+            <SLblockPath>slrt_parker/Trajectory Planner/Enable Homing/Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>const</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Compare</sigName>
+              <xpcsigName>Trajectory Planner/Enable Homing/Compare</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Enable Joint</Name>
+    <xPCName>slrt_parker/Trajectory Planner/Enable Joint</xPCName>
+    
+    
+ 
+            <block>
+            <blkName>Constant</blkName>
+            <xpcblkName>Trajectory Planner/Enable Joint/Constant</xpcblkName>
+            <SLblockPath>slrt_parker/Trajectory Planner/Enable Joint/Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>const</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Compare</sigName>
+              <xpcsigName>Trajectory Planner/Enable Joint/Compare</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Homing</Name>
+    <xPCName>slrt_parker/Trajectory Planner/Homing</xPCName>
+        <SubSystem>
+    <Name>N-Sample
+Switch</Name>
+    <xPCName>slrt_parker/Trajectory Planner/Homing/N-Sample Switch</xPCName>
+    
+    
+ 
+            <block>
+            <blkName>N-Sample
+Enable</blkName>
+            <xpcblkName>Trajectory Planner/Homing/N-Sample Switch/N-Sample Enable</xpcblkName>
+            <SLblockPath>slrt_parker/Trajectory Planner/Homing/N-Sample Switch/N-Sample Enable</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>N</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>ActiveLevel</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>N</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>ActiveLevel</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>N-Sample
+Enable</sigName>
+              <xpcsigName>Trajectory Planner/Homing/N-Sample Switch/N-Sample Enable</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Switch</sigName>
+              <xpcsigName>Trajectory Planner/Homing/N-Sample Switch/Switch</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Homing Procedure</Name>
+    <xPCName>slrt_parker/Trajectory Planner/Homing/Homing Procedure</xPCName>
+    
+    
+    </SubSystem>
+
+    
+ 
+            <block>
+            <blkName>N-Sample
+Switch</blkName>
+            <xpcblkName>Trajectory Planner/Homing/N-Sample Switch</xpcblkName>
+            <SLblockPath>slrt_parker/Trajectory Planner/Homing/N-Sample Switch</SLblockPath>
+            <isSrc>[0 2 1]</isSrc>
+          <parameter>
+          <paramName>N</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+
+
+
+ 
+            <block>
+            <blkName>A Delay</blkName>
+            <xpcblkName>Trajectory Planner/Homing/A Delay</xpcblkName>
+            <SLblockPath>slrt_parker/Trajectory Planner/Homing/A Delay</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[3, 4]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>homing ready delay</blkName>
+            <xpcblkName>Trajectory Planner/Homing/homing ready delay</xpcblkName>
+            <SLblockPath>slrt_parker/Trajectory Planner/Homing/homing ready delay</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>lsf delay</blkName>
+            <xpcblkName>Trajectory Planner/Homing/lsf delay</xpcblkName>
+            <SLblockPath>slrt_parker/Trajectory Planner/Homing/lsf delay</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[3, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>qdes Delay</blkName>
+            <xpcblkName>Trajectory Planner/Homing/qdes Delay</xpcblkName>
+            <SLblockPath>slrt_parker/Trajectory Planner/Homing/qdes Delay</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[3, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>status delay</blkName>
+            <xpcblkName>Trajectory Planner/Homing/status delay</xpcblkName>
+            <SLblockPath>slrt_parker/Trajectory Planner/Homing/status delay</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Homing Procedure/p1</sigName>
+              <xpcsigName>Trajectory Planner/Homing/Homing Procedure/p1</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Homing Procedure/p2</sigName>
+              <xpcsigName>Trajectory Planner/Homing/Homing Procedure/p2</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Homing Procedure/p3</sigName>
+              <xpcsigName>Trajectory Planner/Homing/Homing Procedure/p3</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Homing Procedure/p4</sigName>
+              <xpcsigName>Trajectory Planner/Homing/Homing Procedure/p4</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Homing Procedure/p5</sigName>
+              <xpcsigName>Trajectory Planner/Homing/Homing Procedure/p5</xpcsigName>
+              <sigWidth>12</sigWidth>
+              <sigDim>[3, 4]</sigDim>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Homing Procedure/p6</sigName>
+              <xpcsigName>Trajectory Planner/Homing/Homing Procedure/p6</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Homing Procedure/p7</sigName>
+              <xpcsigName>Trajectory Planner/Homing/Homing Procedure/p7</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Homing Procedure/p8</sigName>
+              <xpcsigName>Trajectory Planner/Homing/Homing Procedure/p8</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>A Delay</sigName>
+              <xpcsigName>Trajectory Planner/Homing/A Delay</xpcsigName>
+              <sigWidth>12</sigWidth>
+              <sigDim>[3, 4]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>homing ready delay</sigName>
+              <xpcsigName>Trajectory Planner/Homing/homing ready delay</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>lsf delay</sigName>
+              <xpcsigName>Trajectory Planner/Homing/lsf delay</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>qdes Delay</sigName>
+              <xpcsigName>Trajectory Planner/Homing/qdes Delay</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>status delay</sigName>
+              <xpcsigName>Trajectory Planner/Homing/status delay</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Quintic Polynomial</Name>
+    <xPCName>slrt_parker/Trajectory Planner/Quintic Polynomial</xPCName>
+        <SubSystem>
+    <Name>5th Order Polynomial</Name>
+    <xPCName>slrt_parker/Trajectory Planner/Quintic Polynomial/5th Order Polynomial</xPCName>
+        <SubSystem>
+    <Name>N-Sample
+Switch</Name>
+    <xPCName>slrt_parker/Trajectory Planner/Quintic Polynomial/5th Order Polynomial/N-Sample Switch</xPCName>
+    
+    
+ 
+            <block>
+            <blkName>N-Sample
+Enable</blkName>
+            <xpcblkName>Trajectory Planner/Quintic Polynomial/5th Order Polynomial/N-Sample Switch/N-Sample Enable</xpcblkName>
+            <SLblockPath>slrt_parker/Trajectory Planner/Quintic Polynomial/5th Order Polynomial/N-Sample Switch/N-Sample Enable</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>N</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>ActiveLevel</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>N</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>ActiveLevel</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>N-Sample
+Enable</sigName>
+              <xpcsigName>Trajectory Planner/Quintic Polynomial/5th Order Polynomial/N-Sample Switch/N-Sample Enable</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Switch</sigName>
+              <xpcsigName>Trajectory Planner/Quintic Polynomial/5th Order Polynomial/N-Sample Switch/Switch</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Embedded
+MATLAB Function</Name>
+    <xPCName>slrt_parker/Trajectory Planner/Quintic Polynomial/5th Order Polynomial/Embedded MATLAB Function</xPCName>
+    
+    
+    </SubSystem>
+
+    
+ 
+            <block>
+            <blkName>N-Sample
+Switch</blkName>
+            <xpcblkName>Trajectory Planner/Quintic Polynomial/5th Order Polynomial/N-Sample Switch</xpcblkName>
+            <SLblockPath>slrt_parker/Trajectory Planner/Quintic Polynomial/5th Order Polynomial/N-Sample Switch</SLblockPath>
+            <isSrc>[0 2 1]</isSrc>
+          <parameter>
+          <paramName>N</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+ 
+            <block>
+            <blkName>tf</blkName>
+            <xpcblkName>Trajectory Planner/Quintic Polynomial/5th Order Polynomial/tf</xpcblkName>
+            <SLblockPath>slrt_parker/Trajectory Planner/Quintic Polynomial/5th Order Polynomial/tf</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+ 
+            <block>
+            <blkName>Unit Delay</blkName>
+            <xpcblkName>Trajectory Planner/Quintic Polynomial/5th Order Polynomial/Unit Delay</xpcblkName>
+            <SLblockPath>slrt_parker/Trajectory Planner/Quintic Polynomial/5th Order Polynomial/Unit Delay</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Unit Delay1</blkName>
+            <xpcblkName>Trajectory Planner/Quintic Polynomial/5th Order Polynomial/Unit Delay1</xpcblkName>
+            <SLblockPath>slrt_parker/Trajectory Planner/Quintic Polynomial/5th Order Polynomial/Unit Delay1</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Unit Delay2</blkName>
+            <xpcblkName>Trajectory Planner/Quintic Polynomial/5th Order Polynomial/Unit Delay2</xpcblkName>
+            <SLblockPath>slrt_parker/Trajectory Planner/Quintic Polynomial/5th Order Polynomial/Unit Delay2</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Embedded
+MATLAB Function/p1</sigName>
+              <xpcsigName>Trajectory Planner/Quintic Polynomial/5th Order Polynomial/Embedded MATLAB Function/p1</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Embedded
+MATLAB Function/p2</sigName>
+              <xpcsigName>Trajectory Planner/Quintic Polynomial/5th Order Polynomial/Embedded MATLAB Function/p2</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Embedded
+MATLAB Function/p3</sigName>
+              <xpcsigName>Trajectory Planner/Quintic Polynomial/5th Order Polynomial/Embedded MATLAB Function/p3</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Embedded
+MATLAB Function/p4</sigName>
+              <xpcsigName>Trajectory Planner/Quintic Polynomial/5th Order Polynomial/Embedded MATLAB Function/p4</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Embedded
+MATLAB Function/p5</sigName>
+              <xpcsigName>Trajectory Planner/Quintic Polynomial/5th Order Polynomial/Embedded MATLAB Function/p5</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Embedded
+MATLAB Function/p6</sigName>
+              <xpcsigName>Trajectory Planner/Quintic Polynomial/5th Order Polynomial/Embedded MATLAB Function/p6</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Embedded
+MATLAB Function/p7</sigName>
+              <xpcsigName>Trajectory Planner/Quintic Polynomial/5th Order Polynomial/Embedded MATLAB Function/p7</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Digital Clock</sigName>
+              <xpcsigName>Trajectory Planner/Quintic Polynomial/5th Order Polynomial/Digital Clock</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Unit Delay</sigName>
+              <xpcsigName>Trajectory Planner/Quintic Polynomial/5th Order Polynomial/Unit Delay</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Unit Delay1</sigName>
+              <xpcsigName>Trajectory Planner/Quintic Polynomial/5th Order Polynomial/Unit Delay1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Unit Delay2</sigName>
+              <xpcsigName>Trajectory Planner/Quintic Polynomial/5th Order Polynomial/Unit Delay2</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Get_Initial_Condition</Name>
+    <xPCName>slrt_parker/Trajectory Planner/Quintic Polynomial/Get_Initial_Condition</xPCName>
+        <SubSystem>
+    <Name>N-Sample
+Switch</Name>
+    <xPCName>slrt_parker/Trajectory Planner/Quintic Polynomial/Get_Initial_Condition/N-Sample Switch</xPCName>
+    
+    
+ 
+            <block>
+            <blkName>N-Sample
+Enable</blkName>
+            <xpcblkName>Trajectory Planner/Quintic Polynomial/Get_Initial_Condition/N-Sample Switch/N-Sample Enable</xpcblkName>
+            <SLblockPath>slrt_parker/Trajectory Planner/Quintic Polynomial/Get_Initial_Condition/N-Sample Switch/N-Sample Enable</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>N</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>ActiveLevel</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>N</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>ActiveLevel</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>N-Sample
+Enable</sigName>
+              <xpcsigName>Trajectory Planner/Quintic Polynomial/Get_Initial_Condition/N-Sample Switch/N-Sample Enable</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Switch</sigName>
+              <xpcsigName>Trajectory Planner/Quintic Polynomial/Get_Initial_Condition/N-Sample Switch/Switch</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+
+    
+ 
+            <block>
+            <blkName>N-Sample
+Switch</blkName>
+            <xpcblkName>Trajectory Planner/Quintic Polynomial/Get_Initial_Condition/N-Sample Switch</xpcblkName>
+            <SLblockPath>slrt_parker/Trajectory Planner/Quintic Polynomial/Get_Initial_Condition/N-Sample Switch</SLblockPath>
+            <isSrc>[0 2 1]</isSrc>
+          <parameter>
+          <paramName>N</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Unit Delay</blkName>
+            <xpcblkName>Trajectory Planner/Quintic Polynomial/Get_Initial_Condition/Unit Delay</xpcblkName>
+            <SLblockPath>slrt_parker/Trajectory Planner/Quintic Polynomial/Get_Initial_Condition/Unit Delay</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[3, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Unit Delay</sigName>
+              <xpcsigName>Trajectory Planner/Quintic Polynomial/Get_Initial_Condition/Unit Delay</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>trigger detection</Name>
+    <xPCName>slrt_parker/Trajectory Planner/Quintic Polynomial/trigger detection</xPCName>
+        <SubSystem>
+    <Name>MATLAB Function</Name>
+    <xPCName>slrt_parker/Trajectory Planner/Quintic Polynomial/trigger detection/MATLAB Function</xPCName>
+    
+    
+    </SubSystem>
+
+    
+
+ 
+            <block>
+            <blkName>Counter</blkName>
+            <xpcblkName>Trajectory Planner/Quintic Polynomial/trigger detection/Counter</xpcblkName>
+            <SLblockPath>slrt_parker/Trajectory Planner/Quintic Polynomial/trigger detection/Counter</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>InitialCount</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>InitialCount</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Unit Delay</blkName>
+            <xpcblkName>Trajectory Planner/Quintic Polynomial/trigger detection/Unit Delay</xpcblkName>
+            <SLblockPath>slrt_parker/Trajectory Planner/Quintic Polynomial/trigger detection/Unit Delay</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>MATLAB Function</sigName>
+              <xpcsigName>Trajectory Planner/Quintic Polynomial/trigger detection/MATLAB Function</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Counter</sigName>
+              <xpcsigName>Trajectory Planner/Quintic Polynomial/trigger detection/Counter</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Unit Delay</sigName>
+              <xpcsigName>Trajectory Planner/Quintic Polynomial/trigger detection/Unit Delay</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+
+    
+ 
+            <block>
+            <blkName>p, pd, pdd</blkName>
+            <xpcblkName>Trajectory Planner/Quintic Polynomial/p, pd, pdd</xpcblkName>
+            <SLblockPath>slrt_parker/Trajectory Planner/Quintic Polynomial/p, pd, pdd</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>InitialOutput</paramName>
+          <dim>[9, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>QuinticRecord</blkName>
+            <xpcblkName>Trajectory Planner/Quintic Polynomial/QuinticRecord</xpcblkName>
+            <SLblockPath>slrt_parker/Trajectory Planner/Quintic Polynomial/QuinticRecord</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>InitialOutput</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+
+ 
+            <block>
+            <blkName>Manual</blkName>
+            <xpcblkName>Trajectory Planner/Quintic Polynomial/Manual</xpcblkName>
+            <SLblockPath>slrt_parker/Trajectory Planner/Quintic Polynomial/Manual</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>enable</blkName>
+            <xpcblkName>Trajectory Planner/Quintic Polynomial/enable</xpcblkName>
+            <SLblockPath>slrt_parker/Trajectory Planner/Quintic Polynomial/enable</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>q_des</blkName>
+            <xpcblkName>Trajectory Planner/Quintic Polynomial/q_des</xpcblkName>
+            <SLblockPath>slrt_parker/Trajectory Planner/Quintic Polynomial/q_des</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[3, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Multiport
+Switch</sigName>
+              <xpcsigName>Trajectory Planner/Quintic Polynomial/Multiport Switch</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>safety check</Name>
+    <xPCName>slrt_parker/Trajectory Planner/safety check</xPCName>
+        <SubSystem>
+    <Name>false detection</Name>
+    <xPCName>slrt_parker/Trajectory Planner/safety check/false detection</xPCName>
+    
+    
+    </SubSystem>
+
+    
+
+ 
+            <block>
+            <blkName>Unit Delay2</blkName>
+            <xpcblkName>Trajectory Planner/safety check/Unit Delay2</xpcblkName>
+            <SLblockPath>slrt_parker/Trajectory Planner/safety check/Unit Delay2</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[9, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Unit Delay3</blkName>
+            <xpcblkName>Trajectory Planner/safety check/Unit Delay3</xpcblkName>
+            <SLblockPath>slrt_parker/Trajectory Planner/safety check/Unit Delay3</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>false detection/p1</sigName>
+              <xpcsigName>Trajectory Planner/safety check/false detection/p1</xpcsigName>
+              <sigWidth>9</sigWidth>
+              <sigDim>[9, 1]</sigDim>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>false detection/p2</sigName>
+              <xpcsigName>Trajectory Planner/safety check/false detection/p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Unit Delay2</sigName>
+              <xpcsigName>Trajectory Planner/safety check/Unit Delay2</xpcsigName>
+              <sigWidth>9</sigWidth>
+              <sigDim>[9, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Unit Delay3</sigName>
+              <xpcsigName>Trajectory Planner/safety check/Unit Delay3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+
+    
+ 
+            <block>
+            <blkName>Enable Homing</blkName>
+            <xpcblkName>Trajectory Planner/Enable Homing</xpcblkName>
+            <SLblockPath>slrt_parker/Trajectory Planner/Enable Homing</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>const</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Enable Joint</blkName>
+            <xpcblkName>Trajectory Planner/Enable Joint</xpcblkName>
+            <SLblockPath>slrt_parker/Trajectory Planner/Enable Joint</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>const</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+
+ 
+            <block>
+            <blkName>Mode</blkName>
+            <xpcblkName>Trajectory Planner/Mode</xpcblkName>
+            <SLblockPath>slrt_parker/Trajectory Planner/Mode</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+    
+
+
+    
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Multiport
+Switch</sigName>
+              <xpcsigName>Trajectory Planner/Multiport Switch</xpcsigName>
+              <sigWidth>9</sigWidth>
+              <sigDim>[9, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+
+      
+
+
+
+
+
+
+
+    
+
+
+    
+
+<block>
+   <blkName>Model Parameters</blkName>
+   <xpcblkName>Model Parameters</xpcblkName>
+   <SLblockPath>. </SLblockPath>
+   <isSrc>[0 1 1]</isSrc>
+              
+   <parameter>
+      <paramName>B</paramName>
+          <dim>[3,3]</dim>
+   </parameter>
+              
+   <parameter>
+      <paramName>ENC_obs_filter_coeffs</paramName>
+          <dim>[1,1]</dim>
+   </parameter>
+              
+   <parameter>
+      <paramName>F</paramName>
+          <dim>[3,3]</dim>
+   </parameter>
+              
+   <parameter>
+      <paramName>HOMING_Vmov</paramName>
+          <dim>[3,1]</dim>
+   </parameter>
+              
+   <parameter>
+      <paramName>HOMING_dx</paramName>
+          <dim>[3,1]</dim>
+   </parameter>
+              
+   <parameter>
+      <paramName>HOMING_tspan</paramName>
+          <dim>[1,1]</dim>
+   </parameter>
+              
+   <parameter>
+      <paramName>Kd</paramName>
+          <dim>[3,3]</dim>
+   </parameter>
+              
+   <parameter>
+      <paramName>Kp</paramName>
+          <dim>[3,3]</dim>
+   </parameter>
+              
+   <parameter>
+      <paramName>N_ENC_obs_filter</paramName>
+          <dim>[1,1]</dim>
+   </parameter>
+              
+   <parameter>
+      <paramName>N_acceleration</paramName>
+          <dim>[1,1]</dim>
+   </parameter>
+              
+   <parameter>
+      <paramName>N_obs_velocity</paramName>
+          <dim>[1,1]</dim>
+   </parameter>
+              
+   <parameter>
+      <paramName>N_velocity</paramName>
+          <dim>[1,1]</dim>
+   </parameter>
+              
+   <parameter>
+      <paramName>accel_filter_coeffs</paramName>
+          <dim>[6,1]</dim>
+   </parameter>
+              
+   <parameter>
+      <paramName>counter_offset</paramName>
+          <dim>[1,1]</dim>
+   </parameter>
+              
+   <parameter>
+      <paramName>dt</paramName>
+          <dim>[1,1]</dim>
+   </parameter>
+              
+   <parameter>
+      <paramName>encoder_counts</paramName>
+          <dim>[1,1]</dim>
+   </parameter>
+              
+   <parameter>
+      <paramName>grav_vector</paramName>
+          <dim>[3,1]</dim>
+   </parameter>
+              
+   <parameter>
+      <paramName>pitch</paramName>
+          <dim>[1,1]</dim>
+   </parameter>
+              
+   <parameter>
+      <paramName>quadrature_mode</paramName>
+          <dim>[1,1]</dim>
+   </parameter>
+              
+   <parameter>
+      <paramName>screw_pitch</paramName>
+          <dim>[1,1]</dim>
+   </parameter>
+              
+   <parameter>
+      <paramName>torque_constant</paramName>
+          <dim>[1,1]</dim>
+   </parameter>
+              
+   <parameter>
+      <paramName>vel_filter_coeffs</paramName>
+          <dim>[6,1]</dim>
+   </parameter>
+              
+   <parameter>
+      <paramName>vel_obs_filter_coeffs</paramName>
+          <dim>[6,1]</dim>
+   </parameter>
+</block>
+</Root>

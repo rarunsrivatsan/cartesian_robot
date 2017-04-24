@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_111" class="java.beans.XMLDecoder">
+ <object class="netftsample.NetFTOptions">
+  <void property="lastIPAddress">
+   <string>192.168.1.1</string>
+  </void>
+  <void property="lastMACAddress">
+   <string>00-16-bd-00-0d-f3</string>
+  </void>
+ </object>
+</java>

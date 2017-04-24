@@ -1,0 +1,48 @@
+const signalNameMap rx_target_BIOMAP[] =
+  {
+	{0,0,6},
+	{1,6,36},
+{-1, -1,2}
+  };
+const signalLabelMap rx_target_LBLMAP[] =
+  {
+	{0,0,6},
+	{1,6,36},
+{-1, -1,2}
+  };
+const signalIdMap rx_target_SIDMAP[] =
+  {
+	{0,0,6},
+	{1,6,36},
+{-1, -1,2}
+  };
+const SortedBlockSignals  rx_target_SBIO[] ={
+       0,
+       1,
+      -1
+};
+const SortedBlockLabels  rx_target_SLBL[] ={
+       0,
+       1,
+      -1
+};
+const OldSortedBlockParameters  rx_target_PTIDSMAP[] ={
+	{-1,-1},
+};
+const OldSortedBlockParameters  rx_target_PTNAMESMAP[] ={
+	{-1,-1},
+};
+const SortedBlockParameters  rx_target_SPTMAP[] ={
+      -1
+};
+
+
+const EnumElemMapInfo rx_target_dtmap[] = 
+{
+	{
+		NULL,NULL,0
+	},
+	{
+		NULL,NULL,0
+	},
+};

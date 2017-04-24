@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><Root>
+
+          <SubSystem>
+    <Name>Scope 1</Name>
+    <xPCName>rx_target/Scope 1</xPCName>
+    
+    
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>MATLAB Function</Name>
+    <xPCName>rx_target/MATLAB Function</xPCName>
+    
+    
+    </SubSystem>
+
+      
+
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>MATLAB Function</sigName>
+              <xpcsigName>MATLAB Function</xpcsigName>
+              <sigWidth>6</sigWidth>
+              <sigDim>[1, 6]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>UDP Receive1</sigName>
+              <xpcsigName>UDP Receive1</xpcsigName>
+              <sigWidth>36</sigWidth>
+              <sigDim>[36, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+</Root>

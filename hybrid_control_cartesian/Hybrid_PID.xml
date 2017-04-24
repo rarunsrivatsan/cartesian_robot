@@ -1,0 +1,3763 @@
+<?xml version="1.0" encoding="UTF-8"?><Root>
+
+          <SubSystem>
+    <Name>Force Reference</Name>
+    <xPCName>Hybrid_PID/Force Reference</xPCName>
+    
+    
+
+
+ 
+            <block>
+            <blkName>Force Matrix output</blkName>
+            <xpcblkName>Force Reference/Force Matrix output</xpcblkName>
+            <SLblockPath>Hybrid_PID/Force Reference/Force Matrix output</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>BreakpointsForDimension1FirstPoint</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Force Matrix Counter</blkName>
+            <xpcblkName>Force Reference/Force Matrix Counter</xpcblkName>
+            <SLblockPath>Hybrid_PID/Force Reference/Force Matrix Counter</SLblockPath>
+            <isSrc>[0 2 2]</isSrc>
+          <parameter>
+          <paramName>InitialCount</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>HitValue</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>InitialCount</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>HitValue</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Unit Delay</blkName>
+            <xpcblkName>Force Reference/Unit Delay</xpcblkName>
+            <SLblockPath>Hybrid_PID/Force Reference/Unit Delay</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Data Store
+Read3</sigName>
+              <xpcsigName>Force Reference/Data Store Read3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Data Type Conversion1</sigName>
+              <xpcsigName>Force Reference/Data Type Conversion1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Force Matrix output</sigName>
+              <xpcsigName>Force Reference/Force Matrix output</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Force output</sigLabel>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Force Matrix Counter/p1</sigName>
+              <xpcsigName>Force Reference/Force Matrix Counter/p1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Force Matrix index</sigLabel>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Force Matrix Counter/p2</sigName>
+              <xpcsigName>Force Reference/Force Matrix Counter/p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Unit Delay</sigName>
+              <xpcsigName>Force Reference/Unit Delay</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Force Subsystem</Name>
+    <xPCName>Hybrid_PID/Force Subsystem</xPCName>
+    
+    
+
+ 
+            <block>
+            <blkName>Receive 1</blkName>
+            <xpcblkName>Force Subsystem/Receive 1</xpcblkName>
+            <SLblockPath>Hybrid_PID/Force Subsystem/Receive 1</SLblockPath>
+            <isSrc>[1 0 2]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 11]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Byte Unpacking 1</sigName>
+              <xpcsigName>Force Subsystem/Byte Unpacking 1</xpcsigName>
+              <sigWidth>6</sigWidth>
+              <sigDim>[6, 1]</sigDim>
+                <sigLabel>orce Data</sigLabel>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Receive 1/p1</sigName>
+              <xpcsigName>Force Subsystem/Receive 1/p1</xpcsigName>
+              <sigWidth>48</sigWidth>
+              <sigDim>[48, 1]</sigDim>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Receive 1/p2</sigName>
+              <xpcsigName>Force Subsystem/Receive 1/p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>System Moving Flag</Name>
+    <xPCName>Hybrid_PID/System Moving Flag</xPCName>
+        <SubSystem>
+    <Name>X Flipflop</Name>
+    <xPCName>Hybrid_PID/System Moving Flag/X Flipflop</xPCName>
+    
+    
+ 
+            <block>
+            <blkName>Logic</blkName>
+            <xpcblkName>System Moving Flag/X Flipflop/Logic</xpcblkName>
+            <SLblockPath>Hybrid_PID/System Moving Flag/X Flipflop/Logic</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>TruthTable</paramName>
+          <dim>[8, 2]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Memory</blkName>
+            <xpcblkName>System Moving Flag/X Flipflop/Memory</xpcblkName>
+            <SLblockPath>Hybrid_PID/System Moving Flag/X Flipflop/Memory</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>initial_condition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Logic</sigName>
+              <xpcsigName>System Moving Flag/X Flipflop/Logic</xpcsigName>
+              <sigWidth>2</sigWidth>
+              <sigDim>[2, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Memory</sigName>
+              <xpcsigName>System Moving Flag/X Flipflop/Memory</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Y Flipflop</Name>
+    <xPCName>Hybrid_PID/System Moving Flag/Y Flipflop</xPCName>
+    
+    
+ 
+            <block>
+            <blkName>Logic</blkName>
+            <xpcblkName>System Moving Flag/Y Flipflop/Logic</xpcblkName>
+            <SLblockPath>Hybrid_PID/System Moving Flag/Y Flipflop/Logic</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>TruthTable</paramName>
+          <dim>[8, 2]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Memory</blkName>
+            <xpcblkName>System Moving Flag/Y Flipflop/Memory</xpcblkName>
+            <SLblockPath>Hybrid_PID/System Moving Flag/Y Flipflop/Memory</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>initial_condition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Logic</sigName>
+              <xpcsigName>System Moving Flag/Y Flipflop/Logic</xpcsigName>
+              <sigWidth>2</sigWidth>
+              <sigDim>[2, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Memory</sigName>
+              <xpcsigName>System Moving Flag/Y Flipflop/Memory</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Z Flipflop</Name>
+    <xPCName>Hybrid_PID/System Moving Flag/Z Flipflop</xPCName>
+    
+    
+ 
+            <block>
+            <blkName>Logic</blkName>
+            <xpcblkName>System Moving Flag/Z Flipflop/Logic</xpcblkName>
+            <SLblockPath>Hybrid_PID/System Moving Flag/Z Flipflop/Logic</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>TruthTable</paramName>
+          <dim>[8, 2]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Memory</blkName>
+            <xpcblkName>System Moving Flag/Z Flipflop/Memory</xpcblkName>
+            <SLblockPath>Hybrid_PID/System Moving Flag/Z Flipflop/Memory</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>initial_condition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Logic</sigName>
+              <xpcsigName>System Moving Flag/Z Flipflop/Logic</xpcsigName>
+              <sigWidth>2</sigWidth>
+              <sigDim>[2, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Memory</sigName>
+              <xpcsigName>System Moving Flag/Z Flipflop/Memory</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+
+    
+ 
+            <block>
+            <blkName>X Flipflop</blkName>
+            <xpcblkName>System Moving Flag/X Flipflop</xpcblkName>
+            <SLblockPath>Hybrid_PID/System Moving Flag/X Flipflop</SLblockPath>
+            <isSrc>[0 2 2]</isSrc>
+          <parameter>
+          <paramName>initial_condition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Y Flipflop</blkName>
+            <xpcblkName>System Moving Flag/Y Flipflop</xpcblkName>
+            <SLblockPath>Hybrid_PID/System Moving Flag/Y Flipflop</SLblockPath>
+            <isSrc>[0 2 2]</isSrc>
+          <parameter>
+          <paramName>initial_condition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Z Flipflop</blkName>
+            <xpcblkName>System Moving Flag/Z Flipflop</xpcblkName>
+            <SLblockPath>Hybrid_PID/System Moving Flag/Z Flipflop</SLblockPath>
+            <isSrc>[0 2 2]</isSrc>
+          <parameter>
+          <paramName>initial_condition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+
+
+ 
+            <block>
+            <blkName>Unit Delay</blkName>
+            <xpcblkName>System Moving Flag/Unit Delay</xpcblkName>
+            <SLblockPath>Hybrid_PID/System Moving Flag/Unit Delay</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Data Type Conversion</sigName>
+              <xpcsigName>System Moving Flag/Data Type Conversion</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Data Type Conversion1</sigName>
+              <xpcsigName>System Moving Flag/Data Type Conversion1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Data Type Conversion2</sigName>
+              <xpcsigName>System Moving Flag/Data Type Conversion2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Logical
+Operator</sigName>
+              <xpcsigName>System Moving Flag/Logical Operator</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Unit Delay</sigName>
+              <xpcsigName>System Moving Flag/Unit Delay</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Variable Scope</Name>
+    <xPCName>Hybrid_PID/Variable Scope</xPCName>
+        <SubSystem>
+    <Name>Counter2</Name>
+    <xPCName>Hybrid_PID/Variable Scope/Counter2</xPCName>
+    
+    
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Counter3</Name>
+    <xPCName>Hybrid_PID/Variable Scope/Counter3</xPCName>
+    
+    
+
+
+    
+    
+
+
+    </SubSystem>
+
+    
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>X Controller</Name>
+    <xPCName>Hybrid_PID/X Controller</xPCName>
+    
+    
+
+ 
+            <block>
+            <blkName>Filter Coefficient</blkName>
+            <xpcblkName>X Controller/Filter Coefficient</xpcblkName>
+            <SLblockPath>Hybrid_PID/X Controller/Filter Coefficient</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>N</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+ 
+            <block>
+            <blkName>Filter</blkName>
+            <xpcblkName>X Controller/Filter</xpcblkName>
+            <SLblockPath>Hybrid_PID/X Controller/Filter</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Integrator</blkName>
+            <xpcblkName>X Controller/Integrator</xpcblkName>
+            <SLblockPath>Hybrid_PID/X Controller/Integrator</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Derivative Gain</sigName>
+              <xpcsigName>X Controller/Derivative Gain</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Filter Coefficient</sigName>
+              <xpcsigName>X Controller/Filter Coefficient</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Integral Gain</sigName>
+              <xpcsigName>X Controller/Integral Gain</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Proportional Gain</sigName>
+              <xpcsigName>X Controller/Proportional Gain</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Filter</sigName>
+              <xpcsigName>X Controller/Filter</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Integrator</sigName>
+              <xpcsigName>X Controller/Integrator</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Sum</sigName>
+              <xpcsigName>X Controller/Sum</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>SumD</sigName>
+              <xpcsigName>X Controller/SumD</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>X Position Input</Name>
+    <xPCName>Hybrid_PID/X Position Input</xPCName>
+    
+    
+
+
+ 
+            <block>
+            <blkName>X Matrix output</blkName>
+            <xpcblkName>X Position Input/X Matrix output</xpcblkName>
+            <SLblockPath>Hybrid_PID/X Position Input/X Matrix output</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>BreakpointsForDimension1FirstPoint</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>X Matrix Counter</blkName>
+            <xpcblkName>X Position Input/X Matrix Counter</xpcblkName>
+            <SLblockPath>Hybrid_PID/X Position Input/X Matrix Counter</SLblockPath>
+            <isSrc>[0 2 2]</isSrc>
+          <parameter>
+          <paramName>InitialCount</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>HitValue</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>InitialCount</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>HitValue</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Unit Delay2</blkName>
+            <xpcblkName>X Position Input/Unit Delay2</xpcblkName>
+            <SLblockPath>Hybrid_PID/X Position Input/Unit Delay2</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Data Store
+Read5</sigName>
+              <xpcsigName>X Position Input/Data Store Read5</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Data Type Conversion3</sigName>
+              <xpcsigName>X Position Input/Data Type Conversion3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>X Matrix output</sigName>
+              <xpcsigName>X Position Input/X Matrix output</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>X Matrix Counter/p1</sigName>
+              <xpcsigName>X Position Input/X Matrix Counter/p1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>X Matrix index</sigLabel>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>X Matrix Counter/p2</sigName>
+              <xpcsigName>X Position Input/X Matrix Counter/p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Unit Delay2</sigName>
+              <xpcsigName>X Position Input/Unit Delay2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>X Position signal</Name>
+    <xPCName>Hybrid_PID/X Position signal</xPCName>
+        <SubSystem>
+    <Name>Deadband pulse counter</Name>
+    <xPCName>Hybrid_PID/X Position signal/Deadband pulse counter</xPCName>
+    
+    
+    </SubSystem>
+
+    
+
+
+
+ 
+            <block>
+            <blkName>Counter</blkName>
+            <xpcblkName>X Position signal/Counter</xpcblkName>
+            <SLblockPath>Hybrid_PID/X Position signal/Counter</SLblockPath>
+            <isSrc>[0 2 2]</isSrc>
+          <parameter>
+          <paramName>InitialCount</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>InitialCount</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Unit Delay</blkName>
+            <xpcblkName>X Position signal/Unit Delay</xpcblkName>
+            <SLblockPath>Hybrid_PID/X Position signal/Unit Delay</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Deadband pulse counter</sigName>
+              <xpcsigName>X Position signal/Deadband pulse counter</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Data Type Conversion1</sigName>
+              <xpcsigName>X Position signal/Data Type Conversion1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Counter/p1</sigName>
+              <xpcsigName>X Position signal/Counter/p1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Counter/p2</sigName>
+              <xpcsigName>X Position signal/Counter/p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Unit Delay</sigName>
+              <xpcsigName>X Position signal/Unit Delay</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>X output processing</Name>
+    <xPCName>Hybrid_PID/X output processing</xPCName>
+    
+    
+
+ 
+            <block>
+            <blkName>Voltage1</blkName>
+            <xpcblkName>X output processing/Voltage1</xpcblkName>
+            <SLblockPath>Hybrid_PID/X output processing/Voltage1</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>PCI-DDA 08 12 4</blkName>
+            <xpcblkName>X output processing/PCI-DDA 08 12 4</xpcblkName>
+            <SLblockPath>Hybrid_PID/X output processing/PCI-DDA 08 12 4</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 3]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P8</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P9</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P10</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Abs1</sigName>
+              <xpcsigName>X output processing/Abs1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>X Enable</sigLabel>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Voltage1</sigName>
+              <xpcsigName>X output processing/Voltage1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>x Voltage</sigLabel>
+            </signal>
+
+
+    
+    
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Sign2</sigName>
+              <xpcsigName>X output processing/Sign2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>motX</sigLabel>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>X_Encoder</Name>
+    <xPCName>Hybrid_PID/X_Encoder</xPCName>
+        <SubSystem>
+    <Name>Counter</Name>
+    <xPCName>Hybrid_PID/X_Encoder/Counter</xPCName>
+    
+    
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Counter2</Name>
+    <xPCName>Hybrid_PID/X_Encoder/Counter2</xPCName>
+    
+    
+
+
+    
+    
+
+
+    </SubSystem>
+
+    
+
+
+ 
+            <block>
+            <blkName>encoder offsets2</blkName>
+            <xpcblkName>X_Encoder/encoder offsets2</xpcblkName>
+            <SLblockPath>Hybrid_PID/X_Encoder/encoder offsets2</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+ 
+            <block>
+            <blkName>count_to_mm1</blkName>
+            <xpcblkName>X_Encoder/count_to_mm1</xpcblkName>
+            <SLblockPath>Hybrid_PID/X_Encoder/count_to_mm1</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>CNT32-8M(PCI) 2</blkName>
+            <xpcblkName>X_Encoder/CNT32-8M(PCI) 2</xpcblkName>
+            <SLblockPath>Hybrid_PID/X_Encoder/CNT32-8M(PCI) 2</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P8</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P9</paramName>
+          <dim>[1, 2]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P10</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P11</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P12</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P13</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P14</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P15</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P16</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P17</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P18</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P19</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P20</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P21</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P22</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P23</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P24</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P25</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P26</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P27</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P28</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P29</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P30</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P31</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P32</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P33</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P34</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P35</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>count_to_mm1</sigName>
+              <xpcsigName>X_Encoder/count_to_mm1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>X Data</sigLabel>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>CNT32-8M(PCI) 2</sigName>
+              <xpcsigName>X_Encoder/CNT32-8M(PCI) 2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Sum3</sigName>
+              <xpcsigName>X_Encoder/Sum3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Y Controller</Name>
+    <xPCName>Hybrid_PID/Y Controller</xPCName>
+    
+    
+
+ 
+            <block>
+            <blkName>Filter Coefficient</blkName>
+            <xpcblkName>Y Controller/Filter Coefficient</xpcblkName>
+            <SLblockPath>Hybrid_PID/Y Controller/Filter Coefficient</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>N</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+ 
+            <block>
+            <blkName>Filter</blkName>
+            <xpcblkName>Y Controller/Filter</xpcblkName>
+            <SLblockPath>Hybrid_PID/Y Controller/Filter</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Integrator</blkName>
+            <xpcblkName>Y Controller/Integrator</xpcblkName>
+            <SLblockPath>Hybrid_PID/Y Controller/Integrator</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Derivative Gain</sigName>
+              <xpcsigName>Y Controller/Derivative Gain</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Filter Coefficient</sigName>
+              <xpcsigName>Y Controller/Filter Coefficient</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Integral Gain</sigName>
+              <xpcsigName>Y Controller/Integral Gain</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Proportional Gain</sigName>
+              <xpcsigName>Y Controller/Proportional Gain</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Filter</sigName>
+              <xpcsigName>Y Controller/Filter</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Integrator</sigName>
+              <xpcsigName>Y Controller/Integrator</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Sum</sigName>
+              <xpcsigName>Y Controller/Sum</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>SumD</sigName>
+              <xpcsigName>Y Controller/SumD</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Y Position Input</Name>
+    <xPCName>Hybrid_PID/Y Position Input</xPCName>
+    
+    
+
+
+ 
+            <block>
+            <blkName>Y Matrix output</blkName>
+            <xpcblkName>Y Position Input/Y Matrix output</xpcblkName>
+            <SLblockPath>Hybrid_PID/Y Position Input/Y Matrix output</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>BreakpointsForDimension1FirstPoint</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Y Matrix Counter</blkName>
+            <xpcblkName>Y Position Input/Y Matrix Counter</xpcblkName>
+            <SLblockPath>Hybrid_PID/Y Position Input/Y Matrix Counter</SLblockPath>
+            <isSrc>[0 2 2]</isSrc>
+          <parameter>
+          <paramName>InitialCount</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>HitValue</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>InitialCount</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>HitValue</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Unit Delay1</blkName>
+            <xpcblkName>Y Position Input/Unit Delay1</xpcblkName>
+            <SLblockPath>Hybrid_PID/Y Position Input/Unit Delay1</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Data Store
+Read4</sigName>
+              <xpcsigName>Y Position Input/Data Store Read4</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Data Type Conversion2</sigName>
+              <xpcsigName>Y Position Input/Data Type Conversion2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Y Matrix output</sigName>
+              <xpcsigName>Y Position Input/Y Matrix output</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Y Matrix Counter/p1</sigName>
+              <xpcsigName>Y Position Input/Y Matrix Counter/p1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Y Matrix index</sigLabel>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Y Matrix Counter/p2</sigName>
+              <xpcsigName>Y Position Input/Y Matrix Counter/p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Unit Delay1</sigName>
+              <xpcsigName>Y Position Input/Unit Delay1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Y Position signal</Name>
+    <xPCName>Hybrid_PID/Y Position signal</xPCName>
+        <SubSystem>
+    <Name>Deadband pulse counter</Name>
+    <xPCName>Hybrid_PID/Y Position signal/Deadband pulse counter</xPCName>
+    
+    
+    </SubSystem>
+
+    
+
+
+
+ 
+            <block>
+            <blkName>Counter</blkName>
+            <xpcblkName>Y Position signal/Counter</xpcblkName>
+            <SLblockPath>Hybrid_PID/Y Position signal/Counter</SLblockPath>
+            <isSrc>[0 2 2]</isSrc>
+          <parameter>
+          <paramName>InitialCount</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>InitialCount</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Unit Delay</blkName>
+            <xpcblkName>Y Position signal/Unit Delay</xpcblkName>
+            <SLblockPath>Hybrid_PID/Y Position signal/Unit Delay</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Deadband pulse counter</sigName>
+              <xpcsigName>Y Position signal/Deadband pulse counter</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Data Type Conversion1</sigName>
+              <xpcsigName>Y Position signal/Data Type Conversion1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Counter/p1</sigName>
+              <xpcsigName>Y Position signal/Counter/p1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Counter/p2</sigName>
+              <xpcsigName>Y Position signal/Counter/p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Unit Delay</sigName>
+              <xpcsigName>Y Position signal/Unit Delay</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Y output processing</Name>
+    <xPCName>Hybrid_PID/Y output processing</xPCName>
+    
+    
+
+ 
+            <block>
+            <blkName>Voltage</blkName>
+            <xpcblkName>Y output processing/Voltage</xpcblkName>
+            <SLblockPath>Hybrid_PID/Y output processing/Voltage</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>PCI-DDA 08 12 3</blkName>
+            <xpcblkName>Y output processing/PCI-DDA 08 12 3</xpcblkName>
+            <SLblockPath>Hybrid_PID/Y output processing/PCI-DDA 08 12 3</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 3]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P8</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P9</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P10</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Abs</sigName>
+              <xpcsigName>Y output processing/Abs</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Y enable</sigLabel>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Voltage</sigName>
+              <xpcsigName>Y output processing/Voltage</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>VoltageY </sigLabel>
+            </signal>
+
+
+    
+    
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Sign</sigName>
+              <xpcsigName>Y output processing/Sign</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Y_encoder
+</Name>
+    <xPCName>Hybrid_PID/Y_encoder </xPCName>
+        <SubSystem>
+    <Name>Counter1</Name>
+    <xPCName>Hybrid_PID/Y_encoder /Counter1</xPCName>
+    
+    
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Counter3</Name>
+    <xPCName>Hybrid_PID/Y_encoder /Counter3</xPCName>
+    
+    
+
+
+    
+    
+
+
+    </SubSystem>
+
+    
+
+
+ 
+            <block>
+            <blkName>encoder offsets1</blkName>
+            <xpcblkName>Y_encoder /encoder offsets1</xpcblkName>
+            <SLblockPath>Hybrid_PID/Y_encoder /encoder offsets1</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+ 
+            <block>
+            <blkName>count_to_mm</blkName>
+            <xpcblkName>Y_encoder /count_to_mm</xpcblkName>
+            <SLblockPath>Hybrid_PID/Y_encoder /count_to_mm</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>CNT32-8M(PCI) 1</blkName>
+            <xpcblkName>Y_encoder /CNT32-8M(PCI) 1</xpcblkName>
+            <SLblockPath>Hybrid_PID/Y_encoder /CNT32-8M(PCI) 1</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P8</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P9</paramName>
+          <dim>[1, 2]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P10</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P11</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P12</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P13</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P14</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P15</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P16</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P17</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P18</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P19</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P20</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P21</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P22</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P23</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P24</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P25</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P26</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P27</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P28</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P29</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P30</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P31</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P32</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P33</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P34</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P35</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>count_to_mm</sigName>
+              <xpcsigName>Y_encoder /count_to_mm</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Y Data</sigLabel>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>CNT32-8M(PCI) 1</sigName>
+              <xpcsigName>Y_encoder /CNT32-8M(PCI) 1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Sum2</sigName>
+              <xpcsigName>Y_encoder /Sum2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Z Controller</Name>
+    <xPCName>Hybrid_PID/Z Controller</xPCName>
+    
+    
+
+ 
+            <block>
+            <blkName>Filter Coefficient</blkName>
+            <xpcblkName>Z Controller/Filter Coefficient</xpcblkName>
+            <SLblockPath>Hybrid_PID/Z Controller/Filter Coefficient</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>N</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+ 
+            <block>
+            <blkName>Filter</blkName>
+            <xpcblkName>Z Controller/Filter</xpcblkName>
+            <SLblockPath>Hybrid_PID/Z Controller/Filter</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Integrator</blkName>
+            <xpcblkName>Z Controller/Integrator</xpcblkName>
+            <SLblockPath>Hybrid_PID/Z Controller/Integrator</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Derivative Gain</sigName>
+              <xpcsigName>Z Controller/Derivative Gain</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Filter Coefficient</sigName>
+              <xpcsigName>Z Controller/Filter Coefficient</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Integral Gain</sigName>
+              <xpcsigName>Z Controller/Integral Gain</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Proportional Gain</sigName>
+              <xpcsigName>Z Controller/Proportional Gain</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Filter</sigName>
+              <xpcsigName>Z Controller/Filter</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Integrator</sigName>
+              <xpcsigName>Z Controller/Integrator</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Sum</sigName>
+              <xpcsigName>Z Controller/Sum</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>SumD</sigName>
+              <xpcsigName>Z Controller/SumD</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Z Position signal</Name>
+    <xPCName>Hybrid_PID/Z Position signal</xPCName>
+        <SubSystem>
+    <Name>Deadband pulse counter</Name>
+    <xPCName>Hybrid_PID/Z Position signal/Deadband pulse counter</xPCName>
+    
+    
+    </SubSystem>
+
+    
+
+ 
+            <block>
+            <blkName>Constant</blkName>
+            <xpcblkName>Z Position signal/Constant</xpcblkName>
+            <SLblockPath>Hybrid_PID/Z Position signal/Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+ 
+            <block>
+            <blkName>Counter</blkName>
+            <xpcblkName>Z Position signal/Counter</xpcblkName>
+            <SLblockPath>Hybrid_PID/Z Position signal/Counter</SLblockPath>
+            <isSrc>[0 2 2]</isSrc>
+          <parameter>
+          <paramName>InitialCount</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>InitialCount</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Unit Delay</blkName>
+            <xpcblkName>Z Position signal/Unit Delay</xpcblkName>
+            <SLblockPath>Hybrid_PID/Z Position signal/Unit Delay</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Deadband pulse counter</sigName>
+              <xpcsigName>Z Position signal/Deadband pulse counter</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Constant</sigName>
+              <xpcsigName>Z Position signal/Constant</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Data Type Conversion1</sigName>
+              <xpcsigName>Z Position signal/Data Type Conversion1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Counter/p1</sigName>
+              <xpcsigName>Z Position signal/Counter/p1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Counter/p2</sigName>
+              <xpcsigName>Z Position signal/Counter/p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Unit Delay</sigName>
+              <xpcsigName>Z Position signal/Unit Delay</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Z output processing</Name>
+    <xPCName>Hybrid_PID/Z output processing</xPCName>
+    
+    
+
+
+ 
+            <block>
+            <blkName>Voltage2</blkName>
+            <xpcblkName>Z output processing/Voltage2</xpcblkName>
+            <SLblockPath>Hybrid_PID/Z output processing/Voltage2</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+ 
+            <block>
+            <blkName>PCI-DDA 08 12 1</blkName>
+            <xpcblkName>Z output processing/PCI-DDA 08 12 1</xpcblkName>
+            <SLblockPath>Hybrid_PID/Z output processing/PCI-DDA 08 12 1</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 3]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P8</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P9</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P10</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>PCI-DDA08 12 3</blkName>
+            <xpcblkName>Z output processing/PCI-DDA08 12 3</xpcblkName>
+            <SLblockPath>Hybrid_PID/Z output processing/PCI-DDA08 12 3</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 3]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P8</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Abs2</sigName>
+              <xpcsigName>Z output processing/Abs2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Data Type Conversion</sigName>
+              <xpcsigName>Z output processing/Data Type Conversion</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Voltage2</sigName>
+              <xpcsigName>Z output processing/Voltage2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Voltage Z </sigLabel>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Logical
+Operator</sigName>
+              <xpcsigName>Z output processing/Logical Operator</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>PCI-DDA08 12 3</sigName>
+              <xpcsigName>Z output processing/PCI-DDA08 12 3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Sign1</sigName>
+              <xpcsigName>Z output processing/Sign1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Z_encoder</Name>
+    <xPCName>Hybrid_PID/Z_encoder</xPCName>
+        <SubSystem>
+    <Name>Counter1</Name>
+    <xPCName>Hybrid_PID/Z_encoder/Counter1</xPCName>
+    
+    
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Counter3</Name>
+    <xPCName>Hybrid_PID/Z_encoder/Counter3</xPCName>
+    
+    
+
+
+    
+    
+
+
+    </SubSystem>
+
+    
+
+
+ 
+            <block>
+            <blkName>encoder offsets1</blkName>
+            <xpcblkName>Z_encoder/encoder offsets1</xpcblkName>
+            <SLblockPath>Hybrid_PID/Z_encoder/encoder offsets1</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+ 
+            <block>
+            <blkName>count_to_mm</blkName>
+            <xpcblkName>Z_encoder/count_to_mm</xpcblkName>
+            <SLblockPath>Hybrid_PID/Z_encoder/count_to_mm</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>CNT32-8M(PCI) 1</blkName>
+            <xpcblkName>Z_encoder/CNT32-8M(PCI) 1</xpcblkName>
+            <SLblockPath>Hybrid_PID/Z_encoder/CNT32-8M(PCI) 1</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P8</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P9</paramName>
+          <dim>[1, 2]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P10</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P11</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P12</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P13</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P14</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P15</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P16</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P17</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P18</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P19</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P20</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P21</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P22</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P23</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P24</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P25</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P26</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P27</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P28</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P29</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P30</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P31</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P32</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P33</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P34</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P35</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>count_to_mm</sigName>
+              <xpcsigName>Z_encoder/count_to_mm</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Z Data</sigLabel>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>CNT32-8M(PCI) 1</sigName>
+              <xpcsigName>Z_encoder/CNT32-8M(PCI) 1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Sum2</sigName>
+              <xpcsigName>Z_encoder/Sum2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+
+      
+ 
+            <block>
+            <blkName>Data Store
+Memory</blkName>
+            <xpcblkName>Data Store Memory</xpcblkName>
+            <SLblockPath>Hybrid_PID/Data Store Memory</SLblockPath>
+            <isSrc>[0 0 0]</isSrc>
+          <parameter>
+          <paramName>InitialValue</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Data Store
+Memory1</blkName>
+            <xpcblkName>Data Store Memory1</xpcblkName>
+            <SLblockPath>Hybrid_PID/Data Store Memory1</SLblockPath>
+            <isSrc>[0 0 0]</isSrc>
+          <parameter>
+          <paramName>InitialValue</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Data Store
+Memory2</blkName>
+            <xpcblkName>Data Store Memory2</xpcblkName>
+            <SLblockPath>Hybrid_PID/Data Store Memory2</SLblockPath>
+            <isSrc>[0 0 0]</isSrc>
+          <parameter>
+          <paramName>InitialValue</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Data Store
+Memory3</blkName>
+            <xpcblkName>Data Store Memory3</xpcblkName>
+            <SLblockPath>Hybrid_PID/Data Store Memory3</SLblockPath>
+            <isSrc>[0 0 0]</isSrc>
+          <parameter>
+          <paramName>InitialValue</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+
+
+ 
+            <block>
+            <blkName>X Controller</blkName>
+            <xpcblkName>X Controller</xpcblkName>
+            <SLblockPath>Hybrid_PID/X Controller</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>N</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+
+
+ 
+            <block>
+            <blkName>Y Controller</blkName>
+            <xpcblkName>Y Controller</xpcblkName>
+            <SLblockPath>Hybrid_PID/Y Controller</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>N</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+
+
+ 
+            <block>
+            <blkName>Z Controller</blkName>
+            <xpcblkName>Z Controller</xpcblkName>
+            <SLblockPath>Hybrid_PID/Z Controller</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>N</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+
+
+
+
+
+ 
+            <block>
+            <blkName>PCI-DDA08 12 </blkName>
+            <xpcblkName>PCI-DDA08 12 </xpcblkName>
+            <SLblockPath>Hybrid_PID/PCI-DDA08 12 </SLblockPath>
+            <isSrc>[0 3 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 3]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 3]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 3]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 3]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Data Store
+Read</sigName>
+              <xpcsigName>Data Store Read</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Data Store
+Read1</sigName>
+              <xpcsigName>Data Store Read1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Data Type Conversion1</sigName>
+              <xpcsigName>Data Type Conversion1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Sum</sigName>
+              <xpcsigName>Sum</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Sum1</sigName>
+              <xpcsigName>Sum1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Sum2</sigName>
+              <xpcsigName>Sum2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Sum3</sigName>
+              <xpcsigName>Sum3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>motY</sigLabel>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Sum4</sigName>
+              <xpcsigName>Sum4</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Sum5</sigName>
+              <xpcsigName>Sum5</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+
+<block>
+   <blkName>Model Parameters</blkName>
+   <xpcblkName>Model Parameters</xpcblkName>
+   <SLblockPath>. </SLblockPath>
+   <isSrc>[0 1 1]</isSrc>
+              
+   <parameter>
+      <paramName>db_x</paramName>
+          <dim>[1,1]</dim>
+   </parameter>
+              
+   <parameter>
+      <paramName>db_y</paramName>
+          <dim>[1,1]</dim>
+   </parameter>
+              
+   <parameter>
+      <paramName>db_z</paramName>
+          <dim>[1,1]</dim>
+   </parameter>
+              
+   <parameter>
+      <paramName>fpos</paramName>
+          <dim>[1,20000]</dim>
+   </parameter>
+              
+   <parameter>
+      <paramName>kdx</paramName>
+          <dim>[1,1]</dim>
+   </parameter>
+              
+   <parameter>
+      <paramName>kdy</paramName>
+          <dim>[1,1]</dim>
+   </parameter>
+              
+   <parameter>
+      <paramName>kdz</paramName>
+          <dim>[1,1]</dim>
+   </parameter>
+              
+   <parameter>
+      <paramName>kix</paramName>
+          <dim>[1,1]</dim>
+   </parameter>
+              
+   <parameter>
+      <paramName>kiy</paramName>
+          <dim>[1,1]</dim>
+   </parameter>
+              
+   <parameter>
+      <paramName>kiz</paramName>
+          <dim>[1,1]</dim>
+   </parameter>
+              
+   <parameter>
+      <paramName>kpx</paramName>
+          <dim>[1,1]</dim>
+   </parameter>
+              
+   <parameter>
+      <paramName>kpy</paramName>
+          <dim>[1,1]</dim>
+   </parameter>
+              
+   <parameter>
+      <paramName>kpz</paramName>
+          <dim>[1,1]</dim>
+   </parameter>
+              
+   <parameter>
+      <paramName>xpos</paramName>
+          <dim>[1,20000]</dim>
+   </parameter>
+              
+   <parameter>
+      <paramName>ypos</paramName>
+          <dim>[1,20000]</dim>
+   </parameter>
+              
+   <parameter>
+      <paramName>hitcount_x</paramName>
+          <dim>[1,1]</dim>
+   </parameter>
+              
+   <parameter>
+      <paramName>hitcount_y</paramName>
+          <dim>[1,1]</dim>
+   </parameter>
+              
+   <parameter>
+      <paramName>hitcount_z</paramName>
+          <dim>[1,1]</dim>
+   </parameter>
+</block>
+</Root>
